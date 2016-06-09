@@ -54,6 +54,7 @@ public class SpotifySearch {
 	 * 				list will be returned.
 	 */
 	public List<Track> searchForTracks(String searchRequest) {
+		log.debug("Search for tracks. [search request = " + searchRequest + "]");
 		List<Track> trackList = new ArrayList<Track>();
 		TrackSearchRequest request = apiHandler.searchTracks(searchRequest)
 										.market(SpotifyConfiguration.getMarket())
@@ -79,6 +80,7 @@ public class SpotifySearch {
 	 * 				list will be returned.
 	 */
 	public List<Artist> searchForArtists(String searchRequest) {
+		log.debug("Search for artists. [search request = " + searchRequest + "]");
 		List<Artist> artistList = new ArrayList<Artist>();
 		ArtistSearchRequest request = apiHandler.searchArtists(searchRequest)
 										.market(SpotifyConfiguration.getMarket())
@@ -104,6 +106,7 @@ public class SpotifySearch {
 	 * 				list will be returned.
 	 */
 	public List<SimpleAlbum> searchForAlbums(String searchRequest) {
+		log.debug("Search for albums. [search request = " + searchRequest + "]");
 		List<SimpleAlbum> albumList = new ArrayList<SimpleAlbum>();
 		AlbumSearchRequest request = apiHandler.searchAlbums(searchRequest)
 										.market(SpotifyConfiguration.getMarket())
