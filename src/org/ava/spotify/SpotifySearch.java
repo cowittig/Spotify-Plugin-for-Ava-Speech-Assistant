@@ -31,7 +31,7 @@ import com.wrapper.spotify.models.Track;
  */
 public class SpotifySearch {
 
-	private final static Logger log = LogManager.getLogger();
+	private final static Logger log = LogManager.getLogger(SpotifySearch.class);
 
 	/** The Spotify API instance. */
 	private Api apiHandler;

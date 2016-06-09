@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class SpotifyConfiguration {
 
-	private final static Logger log = LogManager.getLogger();
+	private final static Logger log = LogManager.getLogger(SpotifyConfiguration.class);
 
 	/** The target market used in API requests. */
 	private static String market;

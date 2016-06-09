@@ -32,14 +32,14 @@ import com.wrapper.spotify.Api;
  */
 public class SpotifyController {
 
-	private final static Logger log = LogManager.getLogger();
+	private final static Logger log = LogManager.getLogger(SpotifyController.class);
 
 	/** The commands of the Spotify plugin. */
 	private List<AppCommand> commandList;
 
 	/** Path to configuration file. Contains necessry information for invoking
 	 * 	the Spotify API. */
-	private Path CONFIG_PATH; 
+	private Path CONFIG_PATH;
 
 	/**
 	 * Initialize the Spotify plugin.
@@ -54,7 +54,7 @@ public class SpotifyController {
 	 */
 	private void init() {
 		log.debug("Initialize Spotify plugin.");
-		
+
 		// initialize the config file path
 		try {
 			Path basePath = new File(SpotifyController.class.getProtectionDomain().getCodeSource().getLocation().toURI())

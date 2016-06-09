@@ -21,7 +21,7 @@ import org.ava.pluginengine.AppPlugin;
  */
 public class SpotifyPlugin implements AppPlugin {
 
-	private final static Logger log = LogManager.getLogger();
+	private final static Logger log = LogManager.getLogger(SpotifyPlugin.class);
 
 	/** The plugin controller manages the plugin activity. */
 	private SpotifyController pluginController;
